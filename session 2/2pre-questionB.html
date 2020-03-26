@@ -4,13 +4,69 @@
     <meta charset="UTF-8">
     <title>Session 2 Individual Test</title>
     <link rel="stylesheet" href="../style.css">
+    <script type="text/javascript" src="../main.js"></script>
 </head>
 <body>
-<div class="background">
-    <div class="continue">
-        <a href=""><img src="../images/continue.png"></a>
+<div class="background" id="question">
+    <div class="content">
+        <br>
+        <input type="radio" name="question" value="A"> Create rapid, automatic bristle motions,
+        <br>generate back-and-forth oscillation or rotation-oscillation to clean teeth.
+        <br><br><br>
+        <input type="radio" name="question" value="B"> Release ultrasonic waves that can enter
+        the interdentium to kill the bacteria inside, <br> remove the plaque via high-speed
+        oscillation.
+        <br><br><br>
+        <input type="radio" name="question" value="C"> Create waves of turbulence in the mix of
+        toothpaste and water in your mouth, <br>forming tiny bubbles to shift the plaque.
+        <br><br>
+        <div style="margin-top: 6%; text-align: center;">
+            <img src="../images/continue.png" style="cursor: pointer;" onclick="getAnswer()">
+        </div>
     </div>
-    <img class="bg-img" src="../images/1pre-questionB.png">
+    <img class="bg-img" src="../images/2pre-questionB.png">
 </div>
+<div class="background" id="A" style="display:none;">
+    <div class="content">
+        <br><br><br>
+        Unfortunately you are wrong. 1 time per day is not enough.
+        <br><br>
+        You should at least brush twice a day to reach the threshold frequency.
+        <br><br>
+        Besides, you need to reach the threshold duration but not necessary to brush too long.
+        <br><br><br>
+        <div style="margin-top: 6%; text-align: center;">
+            <a href="2.4.html"><img src="../images/continue.png"></a>
+        </div>
+    </div>
+    <img class="bg-img" src="../images/2pre-questionB.png">
+</div>
+<div class="background" id="B" style="display:none;">
+    <div class="content">
+        <br><br><br>
+        Congratulations!
+        <br><br>
+        You need to reach the threshold frequency and duration to ensure your teeth are thoroughly cleaned.
+        <br><br><br>
+        <div style="margin-top: 6%; text-align: center;">
+            <a href="2.4.html"><img src="../images/continue.png"></a>
+        </div>
+    </div>
+    <img class="bg-img" src="../images/2pre-questionB.png">
+</div>
+<div class="background" id="C" style="display:none;">
+    <div class="content">
+        <br><br><br>
+        Unfortunately you are wrong. 1 minute per time is not enough.
+        <br><br>
+        You should at least brush 2-3 minute per time to reach the threshold duration.
+        <br><br><br>
+        <div style="margin-top: 6%; text-align: center;">
+            <a href="2.4.html"><img src="../images/continue.png"></a>
+        </div>
+    </div>
+    <img class="bg-img" src="../images/2pre-questionB.png">
+</div>
+
 </body>
 </html>

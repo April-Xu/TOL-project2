@@ -4,11 +4,60 @@
     <meta charset="UTF-8">
     <title>Session 2 Individual Test</title>
     <link rel="stylesheet" href="../style.css">
+    <script type="text/javascript" src="../main.js"></script>
 </head>
 <body>
-<div class="background">
-    <div class="continue">
-        <a href="" id="2pre-qa"><img src="../images/continue.png"></a>
+<div class="background" id="question">
+    <div class="content">
+        <br><br>
+        <input type="radio" name="question" value="A"> Toothbrush that generates ultrasonic waves
+        <br><br><br>
+        <input type="radio" name="question" value="B"> Toothbrush that generates physical vibrations
+        <br><br><br>
+        <input type="radio" name="question" value="C">
+        <br><br><br>
+        <div style="margin-top: 6%; text-align: center;">
+            <img src="../images/continue.png" style="cursor: pointer;" onclick="getAnswer()">
+        </div>
+    </div>
+    <img class="bg-img" src="../images/2pre-questionA.png">
+</div>
+<div class="background" id="A" style="display:none;">
+    <div class="content">
+        <br><br><br>
+        Congratulations!
+        <br><br>
+        Ultrasonic toothbrush sounds like an upgraded version of use ultrasound as a gimmick.
+        <br><br><br>
+        <div style="margin-top: 6%; text-align: center;">
+            <a href="2pre-questionB.html"><img src="../images/next-question.png"></a>
+        </div>
+    </div>
+    <img class="bg-img" src="../images/2pre-questionA.png">
+</div>
+<div class="background" id="B" style="display:none;">
+    <div class="content">
+        <br><br><br>
+        Unfortunately you are wrong.
+        <br><br>
+        Physical vibration is the most common mechanism for electric toothbrushes in the market.
+        <br><br><br>
+        <div style="margin-top: 6%; text-align: center;">
+            <a href="2pre-questionB.html"><img src="../images/next-question.png"></a>
+        </div>
+    </div>
+    <img class="bg-img" src="../images/2pre-questionA.png">
+</div>
+<div class="background" id="C" style="display:none;">
+    <div class="content">
+        <br><br><br>
+        Unfortunately you are wrong.
+        <br><br>
+        Some electric toothbrushes can release negative charge so that electrical attractions to weaken the
+        <br><br><br>
+        <div style="margin-top: 6%; text-align: center;">
+            <a href="2pre-questionB.html"><img src="../images/next-question.png"></a>
+        </div>
     </div>
     <img class="bg-img" src="../images/2pre-questionA.png">
 </div>

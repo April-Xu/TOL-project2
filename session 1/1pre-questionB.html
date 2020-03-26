@@ -4,11 +4,68 @@
     <meta charset="UTF-8">
     <title>Session 1 Individual Test</title>
     <link rel="stylesheet" href="../style.css">
+    <script type="text/javascript" src="../main.js"></script>
 </head>
 <body>
-<div class="background">
-    <div class="continue">
-        <a href=""><img src="../images/continue.png"></a>
+<div class="background" id="question">
+    <div class="content">
+        <br>
+        <input type="radio" name="question" value="A"> The toothbrush should be placed with a 45°
+        angle onto the surface of the teeth. <br>You need to cover the tooth’s surfaces,
+        interdentium, gum line, tongue and cheek.
+        <br><br><br>
+        <input type="radio" name="question" value="B"> The toothbrush should be placed with a 90°
+        angle onto the surface of the teeth. <br>You need to cover the tooth’s surfaces,
+        interdentium, gum line, tongue and cheek.
+        <br><br><br>
+        <input type="radio" name="question" value="C"> The toothbrush should be placed with a 45°
+        angle onto the surface of the teeth. <br>You need to cover the tooth’s surfaces,
+        interdentium, and gum line.
+        <br><br>
+        <div style="margin-top: 6%; text-align: center;">
+            <img src="../images/continue.png" style="cursor: pointer;" onclick="getAnswer()">
+        </div>
+    </div>
+    <img class="bg-img" src="../images/1pre-questionB.png">
+</div>
+<div class="background" id="A" style="display:none;">
+    <div class="content">
+        <br><br><br>
+        Congratulations! Placing your toothbrush with a 45° angle helps you better touch the gum line.
+        <br><br>
+        You can protect your teeth effectively if you clean all these 5 areas.
+        <br><br><br>
+        <div style="margin-top: 6%; text-align: center;">
+            <a href="1.4.html"><img src="../images/continue.png"></a>
+        </div>
+    </div>
+    <img class="bg-img" src="../images/1pre-questionB.png">
+</div>
+<div class="background" id="B" style="display:none;">
+    <div class="content">
+        <br><br><br>
+        Unfortunately you are wrong. Placing your toothbrush with a 90° angle will not allow it to reach the gum line.
+        <br><br>
+        You can protect your teeth effectively if you clean all these 5 areas.
+        <br><br><br>
+        <div style="margin-top: 6%; text-align: center;">
+            <a href="1.4.html"><img src="../images/continue.png"></a>
+        </div>
+    </div>
+    <img class="bg-img" src="../images/1pre-questionB.png">
+</div>
+<div class="background" id="C" style="display:none;">
+    <div class="content">
+        <br><br><br>
+        Unfortunately you are wrong. Placing your toothbrush with a 45° angle helps you better touch the gum line.
+        <br><br>
+        However, don’t forget to brush your tongue and cheek.
+        <br><br>
+        These areas can hide food particles and attract bacteria which will cause damage to your teeth.
+        <br><br><br>
+        <div style="margin-top: 6%; text-align: center;">
+            <a href="1.4.html"><img src="../images/continue.png"></a>
+        </div>
     </div>
     <img class="bg-img" src="../images/1pre-questionB.png">
 </div>
