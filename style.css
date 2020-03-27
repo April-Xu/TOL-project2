@@ -47,12 +47,17 @@ body {
 }
 
 .content .option {
-    text-align: center;
+    text-align: left;
+    padding: 0 33% 0 33%;
 }
 
 .feedback {
-    /*display: none;*/
+    display: none;
     margin: 0 15% 4% 15%;
+}
+
+.feedback img {
+    width: 100%;
 }
 
 .continue{

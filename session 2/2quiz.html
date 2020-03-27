@@ -7,6 +7,126 @@
     <script type="text/javascript" src="../main.js"></script>
 </head>
 <body>
+<div class="background">
+    <div class="content" style="margin-top: 7%;">
+        <div class="title" id="score">
+            Your individual score is: <span></span> / 100
+        </div>
 
+        <div class="title">
+            <span>Q1</span>: To keep your teeth healthy, how often should you brush your teeth?
+        </div>
+        <div class="option">
+            <br><br>
+            <input type="radio" name="question1" value="A"> 1 times per day, 5 minute per time
+            <br><br><br>
+            <input type="radio" name="question1" value="B"> 2 times per day, 2-3 minute per time
+            <br><br><br>
+            <input type="radio" name="question1" value="C"> 3 times per day, 1 minute per time
+            <br><br><br>
+        </div>
+        <div class="feedback" id="q1">
+            <img src="">
+        </div>
+
+        <div class="title">
+            <span>Q2</span>: What’s the correct posture and positions you need to cover while brushing your teeth?
+        </div>
+        <div class="option">
+            <br><br>
+            <input type="radio" name="question2" value="A"> The toothbrush should be placed with
+            a 45° angle onto the surface of the teeth. You need to cover the tooth’s surfaces,
+            interdentium, gum line, tongue and cheek.
+            <br><br><br>
+            <input type="radio" name="question2" value="B"> The toothbrush should be placed with
+            a 90°
+            angle onto the surface of the teeth. You need to cover the tooth’s surfaces,
+            interdentium, gum line, tongue and cheek.
+            <br><br><br>
+            <input type="radio" name="question2" value="C"> The toothbrush should be placed with
+            a 45° angle onto the surface of the teeth. You need to cover the tooth’s surfaces,
+            interdentium, and gum line.
+            <br><br>
+        </div>
+        <div class="feedback" id="q2">
+            <img src="">
+        </div>
+
+        <div class="title">
+            <span>Q3</span>: What type of electric toothbrush is fake?
+        </div>
+        <div class="option">
+            <br><br>
+            <input type="radio" name="question3" value="A"> Toothbrush that generates ultrasonic
+            waves
+            <br><br><br>
+            <input type="radio" name="question3" value="B"> Toothbrush that generates physical
+            vibrations
+            <br><br><br>
+            <input type="radio" name="question3" value="C"> Toothbrush that generates electrical
+            attractions
+            <br><br><br>
+        </div>
+        <div class="feedback" id="q3">
+            <img src="">
+        </div>
+
+
+
+        <div class="title">
+            <span>Q4</span>: What is not the working mechanism of an electric toothbrush?
+        </div>
+        <div class="option">
+            <br><br>
+            <input type="radio" name="question4" value="A"> Create rapid, automatic bristle
+            motions, generate back-and-forth oscillation or rotation-oscillation to clean teeth.
+            <br><br><br>
+            <input type="radio" name="question4" value="B"> Release ultrasonic waves that can
+            enter the interdentium to kill the bacteria inside, remove the plaque via
+            high-speed oscillation.
+            <br><br><br>
+            <input type="radio" name="question4" value="C"> Create waves of turbulence in the mix
+            of toothpaste and water in your mouth, forming tiny bubbles to shift the plaque.
+            <br><br><br>
+        </div>
+        <div class="feedback" id="q4">
+            <img src="">
+        </div>
+
+        <div class="title">
+            <span>Q5</span>: How to optimize teeth protection strategies in terms of
+            toothbrushing techniques and tools? <br>Choose the option that is incorrect:
+        </div>
+        <div class="option">
+            <br><br>
+            <input type="radio" name="question5" value="A"> If I can follow the Bass toothbrushing
+            techniques very well, either a common toothbrush or an electric toothbrush will
+            have the same effect.
+            <br><br><br>
+            <input type="radio" name="question5" value="B"> If I cannot cover the positions well,
+            the electric toothbrush will work better to clean my teeth than a common toothbrush.
+            <br><br><br>
+            <input type="radio" name="question5" value="C"> If sometimes I cannot brush my teeth
+            for enough duration, the electric toothbrush will lower the risk of tooth damage
+            because the high speed motion can remove tooth plaque more efficiently.
+            <br><br><br>
+            <input type="radio" name="question5" value="C"> If I don't brush my teeth with enough
+            frequency, the electric toothbrush can still protect my teeth from decay because it
+            has a better cleaning ability.
+            <br><br><br>
+        </div>
+        <div class="feedback" id="q5">
+            <img src="">
+        </div>
+
+        <div style="margin-top: 6%; text-align: center;" id="submit">
+            <img src="../images/submit.png" style="cursor: pointer;" onclick="getFeedback()">
+        </div>
+        <div style="margin-top: 6%; text-align: center;" id="continue">
+            <a href="2enter-score.html"><img src="../images/continue.png"></a>
+        </div>
+    </div>
+    <img class="bg-img" src="../images/2post-quiz-bg.png">
+</div>
 </body>
 </html>
