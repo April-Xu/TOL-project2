@@ -24,13 +24,18 @@ body {
 }
 
 #score {
-    /*display: none;*/
+    display: none;
     margin-bottom: 5%;
 }
 
 #continue {
     display: none;
 }
+
+#submit {
+    margin-bottom: 4%;
+}
+
 .content .title {
     padding: 0 30% 0 30%;
     font-size: 20pt;
