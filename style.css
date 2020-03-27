@@ -23,6 +23,33 @@ body {
     text-align: center;
 }
 
+#score {
+    /*display: none;*/
+    margin-bottom: 5%;
+}
+
+#continue {
+    display: none;
+}
+.content .title {
+    padding: 0 30% 0 30%;
+    font-size: 20pt;
+    text-align: left;
+}
+
+.content .title span {
+    color: #47adfb;
+}
+
+.content .option {
+    text-align: center;
+}
+
+.feedback {
+    /*display: none;*/
+    margin: 0 15% 4% 15%;
+}
+
 .continue{
     margin-top: 45%;
     text-align: center;
@@ -57,3 +84,4 @@ iframe {
     width: 100%;
     height: 100%;
 }
+
