@@ -8,14 +8,26 @@
 </head>
 <body>
 <div class="background">
-    <div class="content">
-        <iframe src='https://www.verse.com/stories/61168-mings-secret-of-beautiful-tooth-p1/?embed&chapterprogress=0&cuepoints=0'
-                frameborder='0' allowfullscreen ></iframe>
+    <div class="content" id="calculate">
+        <div class="title">
+            <br><br>Enter your score:
+            <input type="text" id="your-score" style="padding:7px 0;">
+            <br><br>Enter your teammate's score:
+            <input type="text" id="teammate-score" style="padding:7px 0;">
+        </div>
+        <div class="continue" style="margin-top: 8%;">
+            <img src="../images/group-score.png" onclick="calculateGroupScore1()">
+        </div>
     </div>
-    <div class="continue">
-        <a href="1pre-quiz.html"><img src="../images/group-score.png"></a>
+    <div class="content" id="final-score">
+        <div class="title" style="padding:10% 40% 0 40%; font-size: 25pt; text-align: center;">
+            <span></span> / 100
+        </div>
+        <div class="continue" style="margin-top: 7%;">
+            <a href="1end.html"><img src="../images/continue.png"></a>
+        </div>
     </div>
-    <img class="bg-img" src="../images/1enter-score.png">
+    <img class="bg-img" id="score-bg" src="../images/1enter-score.png" >
 </div>
 </body>
 </html>

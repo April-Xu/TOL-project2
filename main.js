@@ -1,6 +1,25 @@
+var score = 0, finalscore = 0;
+var radio, i;
+
+function calculateGroupScore1() {
+    document.getElementById("calculate").style.display="none";
+    document.getElementById("final-score").style.display="block";
+    document.getElementById("score-bg").src="../images/1group-score.png";
+    finalscore = (Number(document.getElementById("your-score").value)+Number(document.getElementById("teammate-score").value))/2;
+    document.getElementById("final-score").children[0].children[0].innerText=finalscore;
+}
+
+function calculateGroupScore2() {
+    document.getElementById("calculate").style.display="none";
+    document.getElementById("final-score").style.display="block";
+    document.getElementById("score-bg").src="../images/2group-score.png";
+    finalscore = (Number(document.getElementById("your-score").value)+Number(document.getElementById("teammate-score").value))/2;
+    document.getElementById("final-score").children[0].children[0].innerText=finalscore;
+}
+
 function getAnswer() {
-    var radio = document.getElementsByName("question");
-    for (var i = 0; i < radio.length; i++) {
+    radio = document.getElementsByName("question");
+    for (i = 0; i < radio.length; i++) {
         if (radio[i].checked) {
             switch (i){
                 case 0:
@@ -35,9 +54,8 @@ function getFeedback() {
             cancelAnimationFrame(timer);
         }
     });
-    var score = 0;
-    var radio = document.getElementsByName("question1");
-    for (var i = 0; i < radio.length; i++) {
+    radio = document.getElementsByName("question1");
+    for (i = 0; i < radio.length; i++) {
         if (radio[i].checked) {
             switch (i){
                 case 0:
@@ -159,4 +177,5 @@ function getFeedback() {
     document.getElementById("score").style.display="block";
     document.getElementById("submit").style.display="none";
     document.getElementById("continue").style.display="block";
+    return score;
 }
