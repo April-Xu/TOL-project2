@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/April-Xu/TOL-project2#readme",
   "dependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   }
 }
